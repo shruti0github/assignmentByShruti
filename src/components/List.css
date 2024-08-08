@@ -1,0 +1,123 @@
+.book-list {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.book-list table {
+  width: 100%;
+  max-width: 1400px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.list-container {
+  overflow: auto !important;
+}
+
+.book-list th,
+.book-list td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.book-list th {
+  background-color: #467db9;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.book-list tr {
+  transition: background-color 0.3s;
+}
+
+.book-list tr:hover {
+  background-color: #f1f1f1;
+}
+
+.book-list .even {
+  background-color: #f9f9f9;
+}
+
+.book-list .odd {
+  background-color: #fff;
+}
+
+.book-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.book-list a:hover {
+  text-decoration: underline;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  color: #23b157;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.edit-button:hover {
+  color: #02712b;
+}
+
+.edit-button i {
+  font-size: 19px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.select-tag {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.page-size {
+  margin-top:15px;
+  margin-left:20px;
+}
+
+.page-sort {
+  margin-top:15px;
+  position: absolute;
+  right: 10.4rem;
+  top: 6.3rem;
+}
+
+@media (max-width: 768px) {
+  .book-list table {
+    font-size: 0.9rem;
+  }
+
+  .page-sort {
+   
+    top: 149px;
+    right: 24px;
+  }
+
+  .book-list th,
+  .book-list td {
+    padding: 10px;
+  }
+}
